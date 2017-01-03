@@ -30,26 +30,45 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="client.js" />
+    <Compile Include="client\scripts\bootstrap.min.js" />
+    <Compile Include="client\scripts\jquery-1.9.1.min.js" />
+    <Compile Include="client\src\actions\changeTurn.js" />
+    <Compile Include="client\src\actions\getPossibleSteps.js" />
+    <Compile Include="client\src\actions\requestStep.js" />
+    <Compile Include="client\src\actions\takeStep.js" />
+    <Compile Include="client\src\client.js" />
+    <Compile Include="client\src\components\App.js" />
+    <Compile Include="client\src\components\Board.js" />
+    <Compile Include="client\src\components\Cell.js" />
+    <Compile Include="client\src\networkProxy.js" />
+    <Compile Include="client\src\reducers\board.js" />
+    <Compile Include="client\src\reducers\index.js" />
+    <Compile Include="client\src\reducers\turn.js" />
+    <Compile Include="reversi.js" />
     <Compile Include="server.js" />
-    <Compile Include="src\components\Board.js" />
     <Compile Include="webpack.config.js" />
-    <Content Include="content\site.css" />
+    <Content Include="client\content\css\bootstrap.min.css" />
+    <Content Include="client\content\css\site.css" />
     <Content Include="index.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="content\" />
-    <Folder Include="src\" />
-    <Folder Include="src\components\" />
-    <Folder Include="typings\" />
-    <Folder Include="typings\globals\" />
+    <Folder Include="client\" />
+    <Folder Include="client\content\" />
+    <Folder Include="client\content\css\" />
+    <Folder Include="client\scripts\" />
+    <Folder Include="client\src\" />
+    <Folder Include="client\src\actions\" />
+    <Folder Include="client\src\components\" />
+    <Folder Include="client\src\reducers\" />
     <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\redux-thunk\" />
     <Folder Include="typings\globals\redux\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\redux-thunk\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
