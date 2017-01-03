@@ -1,0 +1,44 @@
+﻿body {
+
+}
+
+.main {
+    padding-top: 20px;
+}
+
+.cell {
+    width: 85px;
+    height: 85px;    
+    border: 1px solid grey;
+    float: left;
+    background-color: lightgrey;
+    padding: 2px;
+}
+
+.cell:nth-child(8n + 1) {
+    clear: both;
+}
+
+.cell.possible-step {
+  background: lightgrey; 
+  background: -webkit-radial-gradient(white, lightgrey, lightgrey); 
+  background: -o-radial-gradient(white, lightgrey, lightgrey);
+  background: -moz-radial-gradient(white, lightgrey, lightgrey);
+  background: radial-gradient(white, lightgrey, lightgrey);
+}
+
+.piece {    
+    width: 80px;
+    height: 80px;        
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;  
+}
+
+.piece.white-piece {
+    background-color: white;
+}
+
+.piece.black-piece {
+    background-color: black;
+}
