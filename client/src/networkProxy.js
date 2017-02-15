@@ -13,10 +13,8 @@ const executeRequest = (uri, method, data) => {
 		.catch(err => console.log(err))
 }
 
-const networkProxy = {
-	requestStep: (board) => {
-		return executeRequest('/reversi', 'POST', board);
-	}	
+function networkProxy() {
+    		
 }
 
-export default networkProxy
+export default new networkProxy

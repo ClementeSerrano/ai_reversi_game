@@ -1,4 +1,4 @@
-﻿const turn = (state = { turn: 0, successiveChangeCount: 0 }, action) => {
+﻿const turn = (state = { turn: 0, successiveChangeCount: 0}, action) => {
 	switch (action.type) {
 		case 'TAKE_STEP':			
 			return {
@@ -8,8 +8,13 @@
 		case 'CHANGE_TURN':
 			return {
 				turn: 1 - state.turn,
-				successiveChangeCount: state.successiveChangeCount + 1	
-			}			
+                successiveChangeCount: state.successiveChangeCount + 1                
+            }	
+        case 'START_NEW_GAME':
+            return {
+                turn: 0,
+                successiveChangeCount: 0
+            }
 		default:
 			return state;
 	}

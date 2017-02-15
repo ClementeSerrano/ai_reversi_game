@@ -42,3 +42,31 @@
 .piece.black-piece {
     background-color: black;
 }
+
+.game-creation {
+    width: 100px;    
+    margin: auto;
+}
+
+.game-creation > .btn {
+    width: 150px;
+    margin: 10px;
+}
+
+.game-creation .form-group {
+    margin: 10px;
+}
+
+input[type='text'] {
+    width: 250px;
+}
+
+.chat {
+    border: 1px solid lightgray;
+    height: 680px;
+    padding: 5px;    
+}
+
+.command-buttons > .btn {
+    width: 150px;
+}

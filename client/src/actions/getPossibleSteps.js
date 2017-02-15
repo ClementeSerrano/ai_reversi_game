@@ -1,4 +1,4 @@
-﻿const getPossibleSteps = (turn) => {	
+﻿const getPossibleSteps = (turn) => {	        
 	return {
 		type: 'GET_POSSIBLE_STEPS',
 		turn

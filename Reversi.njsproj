@@ -30,16 +30,37 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="client\src\actions\connect.js" />
+    <Compile Include="client\src\actions\disconnect.js" />
+    <Compile Include="client\src\actions\emit.js" />
+    <Compile Include="client\src\actions\gameCreated.js" />
+    <Compile Include="client\src\actions\messageReceived.js" />
+    <Compile Include="client\src\actions\joinGame.js" />
+    <Compile Include="client\src\actions\playerJoined.js" />
+    <Compile Include="client\src\actions\playerLeft.js" />
+    <Compile Include="client\src\actions\register.js" />
+    <Compile Include="client\src\actions\sendMessage.js" />
+    <Compile Include="client\src\middlewares\socketMiddleware.js" />
+    <Compile Include="client\src\reducers\chat.js" />
+    <Compile Include="client\src\socketClientProxy.js" />
     <Compile Include="client\scripts\bootstrap.min.js" />
     <Compile Include="client\scripts\jquery-1.9.1.min.js" />
+    <Compile Include="client\scripts\socket.io.min.js" />
+    <Compile Include="client\src\actions\index.js" />
     <Compile Include="client\src\actions\changeTurn.js" />
+    <Compile Include="client\src\actions\clearPossibleSteps.js" />
+    <Compile Include="client\src\actions\stepReceived.js" />
     <Compile Include="client\src\actions\getPossibleSteps.js" />
-    <Compile Include="client\src\actions\requestStep.js" />
+    <Compile Include="client\src\actions\generateStep.js" />
+    <Compile Include="client\src\actions\startNewGame.js" />
     <Compile Include="client\src\actions\takeStep.js" />
     <Compile Include="client\src\client.js" />
-    <Compile Include="client\src\components\App.js" />
     <Compile Include="client\src\components\Board.js" />
     <Compile Include="client\src\components\Cell.js" />
+    <Compile Include="client\src\components\GameCreation.js" />
+    <Compile Include="client\src\components\PlayerOptions.js" />
+    <Compile Include="client\src\components\TwoPlayerGame.js" />
+    <Compile Include="client\src\components\SinglePlayerGame.js" />
     <Compile Include="client\src\networkProxy.js" />
     <Compile Include="client\src\reducers\board.js" />
     <Compile Include="client\src\reducers\index.js" />
@@ -61,15 +82,22 @@
     <Folder Include="client\src\" />
     <Folder Include="client\src\actions\" />
     <Folder Include="client\src\components\" />
+    <Folder Include="client\src\middlewares\" />
     <Folder Include="client\src\reducers\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\isomorphic-fetch\" />
     <Folder Include="typings\globals\node\" />
     <Folder Include="typings\globals\redux-thunk\" />
     <Folder Include="typings\globals\redux\" />
+    <Folder Include="typings\globals\socket.io\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\isomorphic-fetch\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux-thunk\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\redux\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\socket.io\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
