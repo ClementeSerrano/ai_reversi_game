@@ -1,4 +1,6 @@
-﻿# Reversi
+
+Reversi
+===============
 
 How to play the game:
 
