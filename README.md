@@ -1,20 +1,24 @@
+# AI Reversi Game
 
-Reversi
-===============
+Cool reversi game with artificial intelligence algorithms. Built using React.js and Redux on client side and Node.js on server side.
 
-How to play the game:
+## Getting Started
 
-https://www.youtube.com/watch?v=Ol3Id7xYsY4
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-The game is built using React.js, Redux on client side and Node.js on server side.
+### Prerequisites
 
-The Javascript code is written in ES6, and therefore Webpack, Babel is used to transform them
+The only prerequisite is to have Node.js installed in your machine :) For that, just go to https://nodejs.org/en/download/
 
-How to run:
+### Installing and running
 
-1. Install Node.js
-https://nodejs.org/en/download/
+Go to your terminal and clone the repo and then just run ```npm start```.
 
-2. Open Windowns Command Prompt, navigate to the project directory then run the following command: npm start
+* Clone the repo: ```$ git clone https://github.com/ClementeSerrano/ai_reversi_game.git```
+* Start the server: ```$ npm start```
+* Open your browser and access the game going to http://localhost:8080
 
-3. Open the browser and access the game through http://localhost:8080
+## Authors
+
+* **Clemente Serrano** - *Initial work* 
+* **Camilo Zepeda** - *Bug fixer* 
